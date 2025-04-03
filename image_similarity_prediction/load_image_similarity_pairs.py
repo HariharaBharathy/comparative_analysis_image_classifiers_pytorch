@@ -12,7 +12,7 @@ transform = transforms.Compose([
     transforms.Normalize((0.1307,), (0.3081,))
 ])
 
-base_dir_for_MNIST = "/home/mjgtdj/workspace/image_classification_dataset/MNIST_similarity/"
+base_dir_for_MNIST = "/home/user/workspace/image_classification_dataset/MNIST_similarity/"
 mnist_train = MNIST(root=base_dir_for_MNIST, train=True, download=False)
 mnist_test = MNIST(root=base_dir_for_MNIST, train=False, download=False)
 mnist_full = ConcatDataset([mnist_train, mnist_test])

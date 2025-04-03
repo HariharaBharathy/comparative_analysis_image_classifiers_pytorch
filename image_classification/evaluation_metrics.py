@@ -98,8 +98,8 @@ def show_misclassified_images(images, y_true, y_pred, class_names, max_display=1
 
 if __name__ == "__main__":
 
-    path_to_trained_models = "/home/mjgtdj/workspace/trained_nn_models/Pretrained_with_ImageNet_weights/Stanford_cars_classification/"
-    path_to_datasets = "/home/mjgtdj/workspace/image_classification_dataset/"
+    path_to_trained_models = "/home/user/workspace/trained_nn_models/Pretrained_with_ImageNet_weights/Stanford_cars_classification/"
+    path_to_datasets = "/home/user/workspace/image_classification_dataset/"
     experiment_name = "Stanford_cars_vgg16_without_early_stopping_lightweight_with_bn_dropout"
 
     this_model = torch.load(os.path.join(path_to_trained_models, experiment_name, experiment_name+'.pt'), weights_only=False)
@@ -113,7 +113,7 @@ if __name__ == "__main__":
     test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False, num_workers=4)
 
     ## loading class names from database folders in a python list object
-    devkit_path = '/home/mjgtdj/workspace/image_classification_dataset/stanford_cars/devkit'
+    devkit_path = '/home/user/workspace/image_classification_dataset/stanford_cars/devkit'
     cars_meta = loadmat(os.path.join(devkit_path, 'cars_meta.mat'))
     labels_list = [str(c[0]) for c in cars_meta['class_names'][0]]
 

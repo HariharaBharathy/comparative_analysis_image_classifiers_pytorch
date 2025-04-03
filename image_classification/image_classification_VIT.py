@@ -130,9 +130,9 @@ def main():
     args = parser.parse_args()
     converted_dict_args = vars(args)
 
-    data_dir = "/home/mjgtdj/workspace/image_classification_dataset/"
+    data_dir = "/home/user/workspace/image_classification_dataset/"
 
-    path_to_training_runs = "/home/mjgtdj/trained_nn_models"
+    path_to_training_runs = "/home/user/trained_nn_models"
     args_path = os.path.join(path_to_training_runs, args.experiment_name)
     if not os.path.exists(args_path):
         os.makedirs(args_path)

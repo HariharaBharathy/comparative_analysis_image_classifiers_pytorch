@@ -9,7 +9,7 @@ transform = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
 
-data_dir = "/home/mjgtdj/workspace/image_classification_dataset/"
+data_dir = "/home/user/workspace/image_classification_dataset/"
 
 # Load train and test sets
 train_dataset = datasets.StanfordCars(root=data_dir, split='train', transform=transform, download=False)

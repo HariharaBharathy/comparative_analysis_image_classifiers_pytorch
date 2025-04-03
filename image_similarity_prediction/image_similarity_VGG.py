@@ -152,8 +152,8 @@ def main():
     args = parser.parse_args()
     converted_dict_args = vars(args)
 
-    base_dir_for_MNIST = "/home/mjgtdj/workspace/image_classification_dataset/MNIST_similarity/"
-    path_to_training_runs = "/home/mjgtdj/trained_nn_models"
+    base_dir_for_MNIST = "/home/user/workspace/image_classification_dataset/MNIST_similarity/"
+    path_to_training_runs = "/home/user/trained_nn_models"
     args_path = os.path.join(path_to_training_runs, args.experiment_name)
     if not os.path.exists(args_path):
         os.makedirs(args_path)

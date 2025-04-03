@@ -4,7 +4,7 @@ from torchvision import datasets
 from sklearn.model_selection import StratifiedShuffleSplit
 import numpy as np
 
-data_dir = "/home/mjgtdj/workspace/image_classification_dataset/EuroSAT/"
+data_dir = "/home/user/workspace/image_classification_dataset/EuroSAT/"
 
 # Define transformations
 transform = transforms.Compose([

@@ -97,8 +97,8 @@ def apply_gradcam(model, dataset, target_layer, num_samples=5, device="cuda"):
 
 if __name__ == "__main__":
 
-    path_to_trained_models = "/home/mjgtdj/workspace/trained_nn_models/Pretrained_with_ImageNet_weights/MNIST_similarity/"
-    base_dir_for_MNIST = "/home/mjgtdj/workspace/image_classification_dataset/MNIST_similarity/"
+    path_to_trained_models = "/home/user/workspace/trained_nn_models/Pretrained_with_ImageNet_weights/MNIST_similarity/"
+    base_dir_for_MNIST = "/home/user/workspace/image_classification_dataset/MNIST_similarity/"
     experiment_name = "MNIST_similarity_vgg16_without_early_stopping_lightweight_with_bn_dropout"
 
     this_model = torch.load(os.path.join(path_to_trained_models, experiment_name, experiment_name + '.pt'),

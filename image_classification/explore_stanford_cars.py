@@ -8,9 +8,9 @@ from pathlib import Path
 from matplotlib.patches import Rectangle
 from scipy.io import loadmat
 
-devkit_path = Path('/home/mjgtdj/workspace/image_classification_dataset/stanford_cars/devkit')
-train_path = Path('/home/mjgtdj/workspace/image_classification_dataset/stanford_cars/cars_train')
-test_path = Path('/home/mjgtdj/workspace/image_classification_dataset/stanford_cars/cars_test')
+devkit_path = Path('/home/user/workspace/image_classification_dataset/stanford_cars/devkit')
+train_path = Path('/home/user/workspace/image_classification_dataset/stanford_cars/cars_train')
+test_path = Path('/home/user/workspace/image_classification_dataset/stanford_cars/cars_test')
 
 print(os.listdir(devkit_path))
 cars_meta = loadmat(os.path.join(devkit_path, 'cars_meta.mat'))
